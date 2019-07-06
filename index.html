@@ -1,18 +1,48 @@
 <html>
     <head>
-        <title>Lester Profile</title>
-    </head>
-        <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-    body{
-        background-color:#C5EED5 ;
-    }
-    </style>
-    <body>
+            <title>Lester Profile</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="assets/css/style.css">
         
-            <h1>Sample Heading</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perspiciatis nam, in iste ratione ad ex placeat, voluptate, debitis nesciunt quos quisquam exercitationem harum totam quam ab reiciendis beatae quo.
-            </p>
-            
+    <style>
+
+        .main-screen {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .hero-title{
+            font-weight: 500;
+            font-size: 65px;
+        }
+        .main-screen .-content{
+            padding: 120px 75px;
+            flex-grow: 1;
+        }
+
+        .main-screen .-content,
+        .main-screen .-right-image-container img{
+            height: 100%;
+        }
+
+        body{
+            background-color:#C5EED5 ;
+        }
+    </style>
+    </head>
+    <body>
+        <section class="main-screen">
+            <div class="-content">
+                <span class="hero-title">
+                    Hi!
+                    <div>Im Lester</div>
+                </span>
+                <p>As an inspiring Front-End Web Developer</p>
+            </div>
+            <div class="-right-image-container">
+                <img src="assets/img/portrait.jpg" alt="Lester Gumogda's Image">
+            </div>
+        </section>
     </body>
 </html>
