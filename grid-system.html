@@ -1,0 +1,64 @@
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        .box {
+            background-color: grey;
+            width: 100%;
+            min-height: 100px;
+            
+        }
+        
+        .grid-container{
+            max-width: 1440px;
+            margin:0 auto;
+        }
+
+        .grid-container .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .grid-container .row .col {
+            flex-basis: 33.33%;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 259px;
+        }
+        @media ( max-width: 1440px) {
+            .grid-container .row .col {
+            flex-basis: 33.33%;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 259px;
+        }
+        @media ( max-width: 600px) {
+            .grid-container .row .col {
+            flex-basis: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 259px;
+        }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="grid-container">
+            <div class="row">
+                 <div class="col">
+                     <div class="box"></div>
+                 </div>
+                <div class="col">
+                    <div class="box"></div>
+                </div>
+                <div class="col">
+                    <div class="box"></div>
+                </div>
+    </div>
+</div>
+
+    </body>
+</html>
